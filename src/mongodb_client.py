@@ -257,7 +257,7 @@ class MongoDBClient:
         Returns:
             List of AdditionalCompany objects
         """
-        additional_companies_data = data.get("additionalCompanies", [])
+        additional_companies_data = data.get("additionalBusinesses", [])
 
         if not additional_companies_data or not isinstance(
             additional_companies_data, list
