@@ -113,7 +113,7 @@ class MongoDBClient:
         try:
             query = {
                 "dealId": {"$exists": True, "$ne": None},
-                "data.additionalCompanies": {"$exists": True, "$ne": []},
+                "data.additionalBusinesses": {"$exists": True, "$ne": []},
             }
 
             cursor = self.collection.find(query)
